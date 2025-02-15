@@ -1,0 +1,61 @@
+@keyframes example {
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: yellow;
+  }
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.flexity {
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+  height: 80%;
+  width: 30%;
+  cursor: pointer;
+  transition: ease-in-out 0.5s;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid gray;
+}
+.b {
+  background-image: url("troll.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px);
+}
+
+.g {
+  background-image: url("troll.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px);
+}
+
+.y {
+  background-image: url("troll.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px);
+}
+
+.flexity:hover {
+  flex-grow: 1;
+  filter: blur(0);
+}

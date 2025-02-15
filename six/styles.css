@@ -1,0 +1,69 @@
+:root {
+    --outline: red 1px solid;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: hsla(137, 100%, 50%, 0.578);
+    border: 1px solid black;
+    transition: ease 500ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: scale(1.2);
+}
+
+.loading {
+    height: 10%;
+    width: 30%;
+    border: 1px black solid;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.loading-two {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background-color: aqua;
+}
+
+.animate {
+    animation: animate 3s forwards;
+}
+
+@keyframes animate {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
